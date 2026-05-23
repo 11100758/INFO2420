@@ -38,7 +38,7 @@
 
     <p>8. Yes, the site used the same red, white, and navy color scheme on every page. The same fonts and illustration style also carried through the whole site which gave it a consistent look.</p>
 
-    <p>9. On smaller window sizes the sidebar collapses into a menu and the content stacks vertically. It works pretty well on mobile but some sections looked a little cramped on medium sized windows.</p>
+    <p>9. The site responds surprising well to small windows. The UI pretty much remains nearly unchanged, just more tightly packed but still user friendly.</p>
 
     <p>10. The Fearless Flyer was something unusual and very well done. It is an online version of their print newsletter that reads like a magazine with fun stories about the products. Most grocery store websites do not have anything like this.</p>
 
