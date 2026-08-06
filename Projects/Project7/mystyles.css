@@ -82,8 +82,9 @@ section {
 
 article {
 	width: 800px;
-	margin-left: 70px;
+	margin: 0 auto 0 auto;
 	padding: 10px;
+	background-color: #F4F1E8;
 }
 
 article p {
