@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Utah Backyard Birds - Graphics</title>
+
+<style type="text/css">
+
+
+	#thumbs, #image {
+		width: 900px;
+		text-align: center;
+		margin: 0 auto 0 auto;
+		color: #000;
+	}
+
+	#thumbs {
+		margin-top: 10px;
+	}
+
+			
+	#thumbs img {
+		border: solid 1px #000;
+		margin: 5px;
+	}
+
+	#image{
+		height:500px;
+	}
+
+	.instructions{
+		font-style:italic;
+	}
+
+</style>
+
+<script language="JavaScript" type="text/javascript">
+
+	PrintButton1 = new Image
+	PrintButton2 = new Image
+	logo1 = new Image
+	logo2 = new Image
+if (document.images) {
+	PrintButton1.src = "images/Print1.jpg"
+	PrintButton2.src = "images/Print2.jpg"
+	logo1.src = "images/logo1.png"
+	logo2.src = "images/logo2.png"
+}
+
+
+		var imgArray = new Array(
+			'Image1Lg.jpg',
+			'Image2Lg.jpg',
+			'Image3Lg.jpg',
+			'Image4Lg.jpg'
+			
+
+		);
+
+
+		var titleArray = new Array(
+			'Great Blue Heron',
+			'Cardinal on a Branch',
+			'Great Horned Owl',
+			'Bald Eagle'
+			
+		);
+			
+		var imgPath = "images/fullsize/";
+		
+		function swapImage(imgID) {
+
+			var theImage = document.getElementById('theImage');
+			var textDiv = document.getElementById('bottomText');
+
+			var newImg;
+			var textTitle;
+
+			newImg = imgArray[imgID];
+			theImage.src = imgPath + newImg;
+
+			textTitle=titleArray[imgID];
+
+      			textDiv.innerHTML = textTitle;
+		}
+			
+		function preloadImages() {		
+			for(var i = 0; i < imgArray.length; i++) {
+				var tmpImg = new Image;
+				tmpImg.src = imgPath + imgArray[i];
+			}
+		}
+		
+
+</script>
+
+
+</head>
+<body  onload="preloadImages()">
+
+<div align="center">
+
+<div>
+	<a href="" onMouseOver="document.PrintButton.src=PrintButton2.src;"
+	onMouseOut="document.PrintButton.src=PrintButton1.src;">
+
+	<img src="images/Print1.jpg" width="200" height="50" 
+	name="PrintButton" alt="Print Page Button" style="border:none;"/>
+
+	</a>
+</div>
+
+
+<div id="logo">
+	<a href="" onMouseOver="document.logo.src=logo2.src;"
+	onMouseOut="document.logo.src=logo1.src;">
+
+	<img src="images/logo1.png" width="130" height="160" 
+	name="logo" alt="Utah Backyard Birds logo" style="border:none;"/>
+
+	</a>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+
+
+<div id="thumbs">
+		<img src="images/thumbnails/image1sm.jpg" alt="Great Blue Heron" onmouseover="swapImage(0);" />
+		<img src="images/thumbnails/image2sm.jpg" alt="Cardinal on a Branch" onmouseover="swapImage(1);" />
+		<img src="images/thumbnails/image3sm.jpg" alt="Great Horned Owl" onmouseover="swapImage(2);" />
+		<img src="images/thumbnails/image4sm.jpg" alt="Bald Eagle" onmouseover="swapImage(3);" />
+		
+</div>
+
+	<div id="image">
+
+		<img id="theImage" src="images/fullsize/Image1Lg.jpg" alt="Great Blue Heron" />
+		<h3 id="bottomText">Great Blue Heron</h3>
+	</div>
+
+<img src="images/2colback.jpg" alt="Two column background image">
+
+<br />
+<br />
+<br />
+<br />
+
+
+
+</div>
+
+</body>
+</html>
