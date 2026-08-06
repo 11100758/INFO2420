@@ -1,0 +1,134 @@
+/* base styles from Project 3 */
+
+body {
+	background-color: #F4F1E8;
+	color: #2B2B2B;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+
+h1 {
+	color: #355E3B;
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+h2 {
+	color: #8B4513;
+}
+
+a:link {
+	color: #008080;
+}
+
+a:visited {
+	color: #800080;
+}
+
+a:hover {
+	color: #E07020;
+}
+
+/* page layout */
+
+#container {
+	width: 900px;
+	margin: 0 auto 0 auto;
+}
+
+header {
+	width: 900px;
+	height: 175px;
+	background-color: #355E3B;
+}
+
+header img {
+	float: left;
+	margin: 5px;
+}
+
+nav {
+	width: 30%;
+	float: right;
+	margin-top: 15px;
+}
+
+nav a {
+	display: block;
+	background-color: #F4F1E8;
+	color: #355E3B;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	border: solid 2px #8B4513;
+	padding: 4px;
+	margin: 4px 10px 4px 10px;
+}
+
+nav a:link, nav a:visited {
+	color: #355E3B;
+}
+
+nav a:hover {
+	background-color: #E07020;
+	color: #F4F1E8;
+}
+
+section {
+	width: 900px;
+	background-image: url('Images/2colback.jpg');
+	background-repeat: repeat-y;
+}
+
+article {
+	width: 800px;
+	margin-left: 70px;
+	padding: 10px;
+}
+
+article p {
+	text-align: left;
+}
+
+footer {
+	width: 900px;
+	height: 60px;
+	background-color: #355E3B;
+	color: #F4F1E8;
+	text-align: center;
+	clear: both;
+}
+
+footer a:link, footer a:visited {
+	color: #E07020;
+}
+
+/* image swap styles from Project 6 */
+
+#thumbs, #image {
+	width: 700px;
+	text-align: center;
+	margin: 0 auto 0 auto;
+	color: #000;
+}
+
+#thumbs {
+	margin-top: 10px;
+}
+
+#thumbs img {
+	border: solid 1px #000;
+	margin: 5px;
+}
+
+#image {
+	height: 500px;
+}
+
+/* mini tribute */
+
+#minitribute img {
+	float: left;
+	margin: 0 10px 10px 0;
+	border: solid 1px #355E3B;
+}
